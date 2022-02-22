@@ -1,9 +1,9 @@
-import os
-os.environ['KIVY_GL_BACKEND'] = 'angle_sdl2'
+import kivy
 from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.button import Button
 from kivy.uix.textinput import TextInput
+kivy.require('1.10.1')
 
 class MainApp(App):
     def build(self):
